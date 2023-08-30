@@ -105,11 +105,6 @@ public class TeacherController {
     @GetMapping("get/{id}")
     public Result get(@PathVariable Long id) {
         Teacher teacher = teacherService.getById(id);
-        try {
-            int i = 1/0;
-        } catch (Exception e) {
-            throw new YktException("算数异常");
-        }
         return Result.ok(teacher);
     }
 

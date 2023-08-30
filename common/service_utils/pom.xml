@@ -12,5 +12,7 @@
 
     <artifactId>service_utils</artifactId>
 
+    <dependencies>
 
+    </dependencies>
 </project>

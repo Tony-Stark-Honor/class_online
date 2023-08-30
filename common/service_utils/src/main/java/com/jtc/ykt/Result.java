@@ -19,6 +19,13 @@ public class Result<T> {
 
     public Result() {}
 
+    //成功的方法，有data数据
+    public static<T> Result<T> ok() {
+        Result<T> result = new Result<>();
+        result.setCode(20000);
+        result.setMessage("成功");
+        return result;
+    }
 
     //成功的方法，有data数据
     public static<T> Result<T> ok(T data) {
