@@ -32,7 +32,6 @@ import java.util.List;
 @RestController
 @RequestMapping("/admin/vod/teacher")
 @Api("教师管理")
-@CrossOrigin
 public class TeacherController {
     @Autowired
     private TeacherService teacherService;

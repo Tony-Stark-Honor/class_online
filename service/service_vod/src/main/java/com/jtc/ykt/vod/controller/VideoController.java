@@ -20,7 +20,6 @@ import org.springframework.web.bind.annotation.*;
 @Api(tags = "课程小结（课时）")
 @RestController
 @RequestMapping(value="/admin/vod/video")
-@CrossOrigin
 public class VideoController {
 
     @Autowired
@@ -50,8 +49,8 @@ public class VideoController {
     @ApiOperation(value = "删除")
     @DeleteMapping("remove/{id}")
     public Result remove(@PathVariable Long id) {
-        videoService.removeById(id);
-        return Result.ok(null);
+        videoService.removeVideoById(id);
+        return Result.ok();
     }
 }
 

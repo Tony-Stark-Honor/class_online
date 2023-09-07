@@ -16,7 +16,6 @@ import java.util.Map;
  */
 @RestController
 @RequestMapping("/admin/vod/user")
-@CrossOrigin
 @Api("用户操作")
 public class LoginController {
     /**
